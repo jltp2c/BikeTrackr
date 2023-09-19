@@ -4,12 +4,12 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="flex flex-col justify-center items-center h-screen">
-      <h1 className="h-24">BikeTrackr</h1>
+      <h1 className="h-24 font-bold text-6xl">BikeTrackr</h1>
       <div className="flex gap-5 items-center ">
         <Link href="/velos" className="border-2 border-red-700 ">
           <Image src="/velo.png" alt="velo" height={100} width={100}></Image>
         </Link>
-        <div className="flex flex-col border-2 border-red-700 gap-5 h-24">
+        <div className="flex flex-col border-2 border-red-700 gap-5 h-24 p-10">
           <Link href="/signup" className="">
             Inscris toi !
           </Link>
