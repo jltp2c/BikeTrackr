@@ -9,12 +9,8 @@ export default function Home() {
         <Link
           href="/velos"
           className="border-8 border-grey-700 p-4 h-80 w-36 sm:w-56 md:h-96 relative">
-          <Image
-            src="/velo.png"
-            alt="velo"
-            fill
-            className="rotate-2 hover:rotate-0 transition-all"
-          />
+          <h1 className="absolute">Cherche ton vélo</h1>
+          <Image src="/velo.png" alt="velo" fill className="absolute" />
         </Link>
         <div className="flex flex-col justify-center items-center border-8 border-grey-700 gap-5 h-80 w-36 p-4 sm:w-56 md:h-96 relative">
           <Link
