@@ -1,15 +1,14 @@
 import React from "react";
 import Link from "next/link";
 import { auth, UserButton } from "@clerk/nextjs";
-import Profile from "../profile/page";
 
 const Navbar = () => {
   const { userId } = auth();
 
   return (
-    <nav>
+    <nav className="block w-screen">
       <div className="h-20 bg-gray-400 flex justify-end items-center">
-        <div className="flex m-4 my-auto gap-10">
+        <div className="flex items-center m-4 my-auto gap-10">
           {!userId && (
             <>
               <Link
@@ -24,7 +23,11 @@ const Navbar = () => {
               </Link>
             </>
           )}
-          {userId && <Link href="profile">Profile</Link>}
+          {userId && (
+            <Link href="profile" className="hover:text-white">
+              Profile
+            </Link>
+          )}
           <div className="ml-auto">
             <UserButton afterSignOutUrl="/" />
           </div>

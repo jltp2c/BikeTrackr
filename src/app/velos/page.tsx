@@ -1,7 +1,11 @@
 import React from "react";
 
 function velos() {
-  return <div>velos</div>;
+  return (
+    <div>
+      <h1>VELO</h1>
+    </div>
+  );
 }
 
 export default velos;
