@@ -14,12 +14,12 @@ export default function Home() {
         </Link>
         <div className="flex flex-col justify-center items-center border-8 border-grey-700 gap-5 h-80 w-36 p-4 sm:w-56 md:h-96 relative">
           <Link
-            href="/signup"
+            href="sign-up"
             className="border-2 p-2 rounded-md text-xs w-24 sm:w-32 text-center font-bold hover:text-green-600 hover:border-green-600 hover:scale-110 transition-all">
             Inscription
           </Link>
           <Link
-            href="/login"
+            href="sign-in"
             className="border-2 p-2 rounded-md text-xs w-24 sm:w-32  text-center font-bold hover:text-green-600 hover:border-green-600 hover:scale-110 transition-all">
             Connecte-toi
           </Link>
