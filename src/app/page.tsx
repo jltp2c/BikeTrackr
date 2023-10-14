@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -8,9 +7,14 @@ export default function Home() {
       <div className="flex gap-5 items-center">
         <Link
           href="/velos"
-          className="border-8 border-grey-700 p-4 h-80 w-36 sm:w-56 md:h-96 relative">
-          <h1 className="absolute">Cherche ton vélo</h1>
-          <Image src="/velo.png" alt="velo" fill className="absolute" />
+          className="flex border-8 border-grey-700 sm:w-56 md:h-96 relative">
+          <video
+            src="/stealv.mp4"
+            className="w-screen object-cover"
+            autoPlay
+            loop
+            muted
+          />
         </Link>
         <div className="flex flex-col justify-center items-center border-8 border-grey-700 gap-5 h-80 w-36 p-4 sm:w-56 md:h-96 relative">
           <Link
