@@ -8,9 +8,11 @@ const Navbar = () => {
   return (
     <nav className="block w-screen">
       <div className="h-20 bg-gray-400 flex justify-end items-center">
-        <div className="flex items-center justify-between m-4 my-auto gap-10">
-          <h1>BikeTrack</h1>
+        <div className="flex items-center justify-between w-screen m-4 my-auto gap-10">
           <div>
+            <h1 className="text-xl">BikeTrackr.</h1>
+          </div>
+          <div className="flex justify-center items-center gap-10">
             {!userId && (
               <>
                 <Link
@@ -30,9 +32,9 @@ const Navbar = () => {
                 Profile
               </Link>
             )}
-          </div>
-          <div className="ml-auto">
-            <UserButton afterSignOutUrl="/" />
+            <div className="ml-auto">
+              <UserButton afterSignOutUrl="/" />
+            </div>
           </div>
         </div>
       </div>
